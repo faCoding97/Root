@@ -8,17 +8,6 @@ public class Player : MonoBehaviour
 {
     [SerializeField] public static Player instance;
     [SerializeField] public LineRenderer lineRenderer;
-    public static event Action<LineRenderer> eventlineRenderer;
-        
-
-    private void Awake()
-    {
-        lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.SetPosition(0,transform.position);
-        lineRenderer.Simplify(5);
-        lineRenderer.positionCount++;
-
-    }
 
     private void Start()
     {
@@ -28,10 +17,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void DrawLine()
-    {
-        eventlineRenderer?.Invoke(lineRenderer);
-    }
     public float haveFoods;
 
     public void MoveToLocation(Vector3 endLocation)
@@ -46,6 +31,4 @@ public class Player : MonoBehaviour
             print("NO NO");
         }
     }
-
-   
 }
