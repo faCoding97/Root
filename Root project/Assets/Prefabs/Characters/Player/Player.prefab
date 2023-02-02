@@ -101,7 +101,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 2198886496407474197}
-  haveFoods: 3
+  wholeFoodsEaten: 2
+  spentFoods: 0
+  textures:
+  - {fileID: 2800000, guid: 29a47dc515185cc4f9c128a27ad55707, type: 3}
+  - {fileID: 2800000, guid: 96b4f8c26cbd5cf4b882271732f9ee05, type: 3}
+  - {fileID: 2800000, guid: e811e2ce03304e446973a81b90269dce, type: 3}
+  - {fileID: 2800000, guid: d691ed8c3c307fe40803423f7bc48ca7, type: 3}
 --- !u!58 &2198886496407474196
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,9 +186,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 2, y: 2, z: 0}
+  m_Positions: []
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -190,8 +194,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.220339
+        time: 0.007247925
+        value: 0.5169525
         inSlope: 0
         outSlope: 0
         tangentMode: 0

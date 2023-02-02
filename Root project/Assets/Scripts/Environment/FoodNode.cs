@@ -12,6 +12,6 @@ public class FoodNode : Node
     public override void PlayerCollision()
     {
         base.PlayerCollision();
-        Player.instance.haveFoods++;
+        Player.instance.wholeFoodsEaten++;
     }
 }
